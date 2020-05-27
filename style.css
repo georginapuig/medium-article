@@ -1,0 +1,125 @@
+* {
+  margin: 0;
+  padding: 0;
+  }
+  
+  body {
+  font-family: Lora;
+  color: #494949;
+  box-sizing: border-box;
+}
+
+#header {
+  background: 
+  linear-gradient( 
+    rgba(0, 0, 0, 0.45),  
+    rgba(0, 0, 0, 0.45)
+  ), 
+  url("https://source.unsplash.com/random");
+  background-size: cover;
+  font-family: Montserrat;
+  color: white;
+  padding: 140px 0;
+}
+
+h1 {
+  font-size: 38px;
+}
+
+#p-header {
+  font-size: 24px;
+  font-style: italic;
+  font-weight: lighter;
+  opacity: .8;
+}
+
+.container {
+  width: 700px;
+  margin: 50px auto;
+}
+
+p {
+  margin-top: 20px;
+  font-size: 17px;
+}
+
+h2 {
+  font-family: Montserrat;
+  font-weight: 500;
+  font-size: 27px;
+  color:rgba(75, 75, 75, 0.84);
+}
+
+#p-bg-color {
+  text-decoration: none;
+  display: inline-block;
+  background-color: rgb(188, 245, 186, .5);
+  color: #636363;
+  font-weight: lighter;
+  font-size: 24px;
+  font-style: italic;
+  font-family: 'Lora', serif;
+  margin-top: 20px;
+}
+
+#p-bg-color:hover {
+  background-color: rgba(125, 255, 179, 1);
+  transition: 0.3s;
+}
+
+/*******************
+** MEDIA QUERIES  **
+*******************/
+
+@media(max-width: 992px) {
+  .container {
+    width: 700px;
+  }
+}
+
+@media (max-width: 720px) {
+  /* For a screen < 720px, this CSS will be read */
+  .container {
+    width: 500px;
+  }
+
+  .container p {
+    font-size: 15px;
+    line-height: 1.6;
+  }
+
+  h2 {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 540px) {
+  /* For a screen < 540px, this CSS will be read */
+ .container {
+    width: 250px;
+    margin: 50px auto;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  .container p {
+    font-size: 12px;
+    line-height: 1.6;
+  }
+
+  #p-bg-color {
+    font-size: 19px;
+  }
+  
+  #p-header {
+    font-size: 19px;
+    line-height: 1.2;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+  
+}
